@@ -1,0 +1,16 @@
+<h1 class="m-auto my-4">Personajes de Harry Potter</h1>
+
+<% @character.each do |c| %>
+    <div class="card m-auto my-4" style="width: 18rem;">
+        <div class="card-header">
+            Nombre: <%= c.name %>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Locación: <%=c.location %></li>
+            <li class="list-group-item">Casa: <%= c.house %></li>
+        </ul>
+    </div>
+<% end%>
+
+
+
